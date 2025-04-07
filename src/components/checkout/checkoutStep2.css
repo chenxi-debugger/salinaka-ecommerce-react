@@ -1,0 +1,158 @@
+.checkout-wrapper {
+    padding: 2rem;
+    max-width: 960px;
+    margin: auto;
+    font-family: sans-serif;
+  }
+  
+  .checkout-steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .step-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    color: #aaa;
+  }
+  
+  .step-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    text-align: center;
+    line-height: 26px;
+    font-weight: bold;
+    color: #aaa;
+    margin-bottom: 0.5rem;
+  }
+  
+  .step-circle.active {
+    border-color: black;
+    background: black;
+    color: white;
+  }
+  
+  .step-label {
+    margin: 0;
+    font-weight: 500;
+  }
+  
+  .checkout-title {
+    font-size: 24px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .shipping-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .shipping-form input[type='text'],
+  .shipping-form input[type='email'] {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 82%;
+    margin-left: 24px;
+  }
+  
+  .shipping-form input::placeholder {
+    color: #999;
+  }
+  .shipping-option{
+    grid-column: 1 / -1;
+    padding: 1.5rem;
+    font-size: 14px;
+  }
+  .shipping-form {
+    grid-column: 1 / -1;
+    padding: 1rem;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .checkout-summary {
+    grid-column: 1 / -1;
+    text-align: right;
+    margin-top: 2rem;
+  }
+  
+  .checkout-summary p {
+    margin: 4px 0;
+    font-size: 14px;
+  }
+  
+  .checkout-summary strong {
+    font-size: 16px;
+  }
+  
+  .checkout-footer {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .btn-outline {
+    background: white;
+    border: 1px solid black;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .btn-black {
+    background: black;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+  }
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.input-group label {
+  font-size: 14px;
+  color: #555;
+  margin-left: 24px;
+}
+
+.step-line {
+  height: 2px;
+  width: 30px;
+  background-color: #ccc;
+  margin: 0 5px;
+}
+
+.option-box {
+  display: flex;
+  justify-content: space-between;
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  font-size: 14px;
+}
+
+.option-price {
+  font-weight: bold;
+}
+  

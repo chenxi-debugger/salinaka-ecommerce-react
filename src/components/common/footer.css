@@ -1,0 +1,48 @@
+footer {
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(74, 74, 74);
+    height: 130px;
+  
+  }
+  
+  footer .footer-column {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  footer .footer-center {
+    text-align: center;
+  }
+  
+  footer .footer-logo {
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+  
+  footer .footer-year {
+    margin: 0;
+    font-size: 12px;
+    color: rgb(26, 26, 26);
+  }
+  
+  footer a {
+    text-decoration: underline;
+    color: #000;
+  }
+  
+  footer a:hover {
+    color: #555;
+  }
+  

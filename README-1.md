@@ -74,14 +74,4 @@ src/
 
 ---
 
-## ✅ To Do
 
-- Connect to Firebase or another backend
-- Style the UI to match your project
-- Add authentication system
-
----
-
-## ❤️ Credits
-
-Based on the Salinaka E-commerce design and customized by Yang's dev assistant 😄

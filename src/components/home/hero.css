@@ -1,0 +1,59 @@
+/* Hero.css */
+
+.hero {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;  
+    
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .hero-content-wrapper{
+    height: 100%;
+    width: 84%;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(243, 243, 243);
+  }
+  
+  .hero-content {
+    width: 50%;
+    height: 100%;
+    padding: 40px;
+  }
+  .hero-picture{
+    max-width: 50%;
+    height: 100%;
+  }
+  
+  .hero-content h1 {
+    color: rgb(26, 26, 26);
+    font-size: 48px; 
+    font-family: 400px;
+  }
+  
+  .hero-content p {
+    font-size: 16px;
+    color: rgb(154, 154, 154);
+    margin-bottom: 50px;
+  }
+  
+  .hero-content .button {
+    padding: 0.8rem 2rem;
+    background-color: #222;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    height: 52px;
+    width: 124px;;
+    cursor: pointer;
+  }
+  
+  
+  .hero-picture-content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  

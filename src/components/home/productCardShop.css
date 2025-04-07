@@ -1,0 +1,117 @@
+/* 🃏 Product Card */
+.shop-card {
+    width: 178px;
+    height: 230px;
+    border: 1px solid rgb(225, 225, 225);
+    transition: box-shadow 0.2s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.shop-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.shop-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+/* 🖼️ Content Container (Image + Info) */
+.shop-content {
+    transition: transform 0.3s ease; /* Smooth transition for moving all content up */
+}
+
+.shop-card:hover .shop-content {
+    transform: translateY(-30px); /* Move all content up by the height of the button */
+}
+
+/* 🖼️ Image Section */
+.shop-image-container {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease; /* Add transition for scaling */
+}
+
+.shop-card:hover .shop-image {
+    transform: scale(0.8); /* Shrink the image container on hover */
+    transform: translateY(15px)
+}
+
+.shop-image {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+/* 🧾 Info Section */
+.shop-info {
+    padding: 15px 20px;
+    text-align: center;
+    padding: 30px;
+}
+
+.shop-name {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0;
+    color: rgb(26, 26, 26);
+}
+
+.shop-brand {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 500;
+    color: rgb(129, 129, 129);
+    margin-top: 10px;
+}
+
+.shop-price {
+    display: block !important;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* Add to Basket Button */
+.shop-add-button {
+    color: white;
+    background-color: rgb(16, 16, 16);
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.shop-card:hover .shop-add-button {
+    transform: translateY(0);
+}
+
+.btn-show-more {
+    height: 40px;
+    width: 150px;
+    margin: 30px auto;
+    display: block;
+    background-color: black;
+    color: white;
+
+}

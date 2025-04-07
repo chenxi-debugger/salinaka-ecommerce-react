@@ -1,0 +1,120 @@
+
+.shop-page {
+    padding: 80px 0;
+    max-width: 1200px; /* Limit the width for larger screens */
+    margin: 0 auto; /* Center the content */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Shop Grid */
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columns on large screens */
+    gap: 20px; /* Space between cards */
+}
+
+/* Show More Container */
+
+.show-more-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+  }
+  
+  .show-more-button {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .show-more-button:hover {
+    background-color: #333;
+  }
+
+  .filter-summary-wrapper{
+    height:90px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px;
+    margin-bottom: 40px;
+  }
+
+  .filter-summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .filter-summary-title{
+    display: block;
+    font-size: 20px;
+    height: 30px;
+    width: 100px;
+    white-space: nowrap;
+
+    font-weight: 600;
+    
+  }
+  .active-filters{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  .filter-tag{
+    margin: 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+  }
+  .filter-tag button{
+    margin-left: 10px;
+    border-radius: 50%;
+  }
+  .filter-tag-content{
+    display: inline-block;
+    height: 40px;
+    width: 150px;
+    line-height: 40px;
+    text-align: center;
+    border: none;
+    background-color: lightgray;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .shop-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .shop-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .shop-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on very small screens */
+    }
+}
+
+@media (max-width: 320px) {
+    .shop-grid {
+        grid-template-columns: 1fr; /* 1 column on tiny screens */
+    }
+}
