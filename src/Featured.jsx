@@ -18,7 +18,7 @@ const FeaturedPage = () => (
       <h2>Featured Products</h2>
       </div>
             <div className='section-3-picture'>
-                <img src='/image/feature-page.png' className='section-3-picture-content' alt='feature-page'>
+                <img src={`${process.env.PUBLIC_URL}/image/feature-page.png`} className='section-3-picture-content' alt='feature-page'>
             </img>    
             </div>
         </div>

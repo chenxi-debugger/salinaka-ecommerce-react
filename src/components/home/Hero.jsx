@@ -14,7 +14,7 @@ const Hero = () => (
             </Link>
         </div>
         <div className='hero-picture'>
-            <img src='/image/banner-girl.789f1fa6f451ad26c5039fcbc049ace7.png' className='hero-picture-content'></img>
+            <img src={`${process.env.PUBLIC_URL}/image/banner-girl.png`} className='hero-picture-content' alt='banner-girl'></img>
         </div>
     </div>
   </section>

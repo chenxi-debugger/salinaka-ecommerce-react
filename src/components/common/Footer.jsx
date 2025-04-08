@@ -13,7 +13,7 @@ const Footer = () => {
 
       <div className="footer-center">
         <img
-          src="/image/logo-full.059e10fa5fedbfb65165e7565ed3936f.png"
+          src={`${process.env.PUBLIC_URL}/image/logo-full.png`}
           alt="Salinaka Logo"
           className="footer-logo"
         />

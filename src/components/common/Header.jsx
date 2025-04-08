@@ -63,7 +63,7 @@ const Header = () => {
       <div className="header-left">
         <NavLink to="/" id="homeLink">
           <img
-            src="/image/logo-full.059e10fa5fedbfb65165e7565ed3936f.png"
+            src={`${process.env.PUBLIC_URL}/image/logo-full.png`}
             alt="Salinaka Logo"
             className="logo"
           />
@@ -88,7 +88,7 @@ const Header = () => {
 
         <form className="search-bar" onSubmit={handleSearchSubmit}>
           <img
-            src="/image/magnifying-glass-solid.svg"
+            src={`${process.env.PUBLIC_URL}/image/magnifying-glass-solid.svg`}
             alt="Search"
             className="magnifierImg"
           />
@@ -102,7 +102,11 @@ const Header = () => {
         </form>
 
         <div className="cart-icon" onClick={() => document.body.classList.add('is-basket-open')}>
-          <img src="/image/cart-plus-solid.svg" alt="Cart" className="cart-icon-img" />
+          <img src={`${process.env.PUBLIC_URL}/image/cart-plus-solid.svg`}
+          alt="Cart" 
+          className="cart-icon-img" 
+            
+          />
           {totalItems > 0 && <span className="cart-count">{totalItems}</span>}
         </div>
 

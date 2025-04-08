@@ -50,20 +50,24 @@ const ProductDetails = () => {
                 <Link to="/shop" className="back-link">← Back to shop</Link>
 
                 <div className="product-wrapper">
-                    <div className="product-images">
-                        {product.imageCollection.map((img, index) => (
-                            <img
-                                src={img}
-                                alt={`${product.name} ${index}`}
-                                key={index}
-                                className={`thumbnail ${selectedImage === img ? 'active' : ''}`}
-                                onClick={() => setSelectedImage(img)}
-                            />
-                        ))}
+                <div className="product-images">
+                    {product.imageCollection.map((img, index) => (
+                        <img
+                        src={`${process.env.PUBLIC_URL}${img}`}
+                        alt={`${product.name} ${index}`}
+                        key={index}
+                        className={`thumbnail ${selectedImage === img ? 'active' : ''}`}
+                        onClick={() => setSelectedImage(img)}
+                        />
+                    ))}
                     </div>
 
                     <div className="product-image-preview">
-                        <img className='image-preview-img' src={selectedImage} alt={product.name} />
+                        <img
+                            className="image-preview-img"
+                            src={`${process.env.PUBLIC_URL}${selectedImage}`}
+                            alt={product.name}
+                        />
                     </div>
 
                     <div className="product-main">

@@ -26,9 +26,9 @@ const AccountPage = () => {
         <div className="account-section">
         <div
             className="account-cover"
-            style={{ backgroundImage: "url('/image/array-of-glasses.jpg')" }}
+            style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/image/array-of-glasses.jpg)`}}
         >
-            <img className="avatar" src="/image/userImage.png" alt="avatar" />
+            <img className="avatar" src={`${process.env.PUBLIC_URL}/image/userImage.png`} alt="avatar" />
             <button className="edit-btn" onClick={() => navigate('/account/edit')}>Edit Account</button>
           </div>
           <div className="account-info">

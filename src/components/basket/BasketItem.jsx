@@ -8,7 +8,7 @@ const BasketItem = ({ product, dispatch }) => (
     <div className="basket-item">
         <div className="basket-item-wrapper">
             <div className="basket-item-img-wrapper">
-                <img className="basket-item-img" src={product.image} alt={product.name} />
+                <img className="basket-item-img" src={`${process.env.PUBLIC_URL}${product.image}`} alt={product.name} />
             </div>
             <div className="basket-item-details">
                 <Link

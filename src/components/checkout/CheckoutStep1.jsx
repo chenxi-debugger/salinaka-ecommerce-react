@@ -54,7 +54,7 @@ const CheckoutStep1 = () => {
               <button onClick={() => updateQuantity(index, 1)} className='quantity-control-btn'>+</button>
               <button onClick={() => updateQuantity(index, -1)} className='quantity-control-btn'>-</button>
             </div>
-            <img src={item.image} alt={item.name} className="basket-img" />
+            <img src={`${process.env.PUBLIC_URL}${item.image}`} alt={item.name} className="basket-img" />
             <div className="basket-info">
               <Link className="basket-item-name" to={`/product/${item.id}`}>
                 {item.name}

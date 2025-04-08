@@ -29,7 +29,7 @@ const ProductCardShop = ({ product, showPrice = false }) => {
             <Link to={`/product/${product.id}`}>
                 <div className="shop-content">
                     <div className="shop-image-container">
-                        <img src={product.image} alt={product.name} className="shop-image" />
+                        <img src={`${process.env.PUBLIC_URL}${product.image}`} alt={product.name} className="shop-image" />
                     </div>
                     <div className="shop-info">
                         <h3 className="shop-name">{product.name}</h3>

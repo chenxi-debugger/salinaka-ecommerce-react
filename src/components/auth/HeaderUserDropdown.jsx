@@ -22,18 +22,18 @@ const HeaderUserDropdown = ({ user, onSignOut }) => {
     <div className="user-dropdown" ref={dropdownRef}>
       <div className="user-trigger" onClick={toggleDropdown}>
         <span>{user.fullname}</span>
-        <img className="user-avatar" src="/image/userImage.png" alt="User" />
+        <img className="user-avatar" src={`${process.env.PUBLIC_URL}/image/userImage.png`} alt="User" />
         <span className="arrow-down">▼</span>
       </div>
 
       <div className={`user-menu ${open ? 'show' : ''}`}>
         <Link to="/account" className="dropdown-item" onClick={() => setOpen(false)}>
           <span>View Account</span>
-          <img src="/image/user-solid.svg" alt="account icon" className="menu-icon" />
+          <img src={`${process.env.PUBLIC_URL}/image/user-solid.svg`} alt="account icon" className="menu-icon" />
         </Link>
         <button className="dropdown-item" onClick={onSignOut}>
           <span>Sign Out</span>
-          <img src="/image/arrow-right-from-bracket-solid.svg" alt="sign out icon" className="menu-icon-2" />
+          <img src={`${process.env.PUBLIC_URL}/image/arrow-right-from-bracket-solid.svg`} alt="sign out icon" className="menu-icon-2" />
         </button>
       </div>
     </div>

@@ -16,7 +16,7 @@ const RecommendedPage = () => (
                 <h1>Recommended Products</h1>
             </div>
             <div className='section-4-picture'>
-                <img src='/image/recomended-page.png' className='section-4-picture-content'>
+                <img src={`${process.env.PUBLIC_URL}/image/recomended-page.png`} className='section-4-picture-content'>
             </img>    
             </div>
         </div>

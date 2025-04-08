@@ -64,7 +64,7 @@ const CheckoutStep3 = () => {
             <strong>Credit Card</strong>
             <span>Pay with Visa, Master Card and other debit or credit card</span>
           </div>
-          <img src="/image/bank-5.jpeg" alt="Visa Icon" className="pay-icon" />
+          <img src={`${process.env.PUBLIC_URL}/image/bank-5.jpeg`} alt="Visa Icon" className="pay-icon" />
         </label>
 
         {paymentMethod === 'card' && (
@@ -72,10 +72,10 @@ const CheckoutStep3 = () => {
             <div className="accepted">
               <p>Accepted Cards</p>
               <div className="card-icons">
-                <img src="/image/bank-3.jpeg" alt="Visa" />
-                <img src="/image/bank-2.jpeg" alt="Mastercard" />
-                <img src="/image/bank-1.jpeg" alt="Amex" />
-                <img src="/image/bank-4.jpeg" alt="Discover" />
+                <img src={`${process.env.PUBLIC_URL}/image/bank-3.jpeg`} alt="Visa" />
+                <img src={`${process.env.PUBLIC_URL}/image/bank-2.jpeg`} alt="Mastercard" />
+                <img src={`${process.env.PUBLIC_URL}/image/bank-1.jpeg`} alt="Amex" />
+                <img src={`${process.env.PUBLIC_URL}/image/bank-4.jpeg`} alt="Discover" />
               </div>
             </div>
             <div className="card-form">
@@ -99,7 +99,7 @@ const CheckoutStep3 = () => {
             <strong>PayPal</strong>
             <span>Pay easily, fast and secure with PayPal.</span>
           </div>
-          <img src="/image/paypal-logo.webp" alt="PayPal Icon" className="pay-icon" />
+          <img src={`${process.env.PUBLIC_URL}/image/paypal-logo.webp`} alt="PayPal Icon" className="pay-icon" />
         </label>
       </div>
 

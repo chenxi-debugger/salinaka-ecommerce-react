@@ -8,9 +8,14 @@ const ProductCard = ({ product, showPrice = false }) => {
     return (
         <div className='product-card'>
         <Link to={`/product/${product.id}`}>
-          <div className="product-image-container">
-            <img src={product.image} alt={product.name} className="product-image" />
-          </div>
+        <div className="product-image-container">
+          <img
+            src={`${process.env.PUBLIC_URL}${product.image}`}
+            alt={product.name}
+            className="product-image"
+          />
+        </div>
+
           <div className="product-info-1">
             <h3 className="product-name-1">{product.name}</h3>
             <p className="product-brand-1">{product.brand}</p>
