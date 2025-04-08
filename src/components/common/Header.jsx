@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { NavLink, useNavigate, useLocation } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import HeaderUserDropdown from '../auth/HeaderUserDropdown';
+import * as ROUTES from '../../constants/routes';
 import './header.css';
 
 const Header = () => {
@@ -13,6 +14,7 @@ const Header = () => {
   const isShopPage = location.pathname === '/shop';
 
   const [showMessage, setShowMessage] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
   const prevBasket = useRef(basket);
   const navigate = useNavigate();
 
@@ -40,6 +42,21 @@ const Header = () => {
 
     prevBasket.current = basket;
   }, [basket]);
+     
+    // Handle search input change
+    const handleSearchChange = (e) => {
+      setSearchQuery(e.target.value);
+    };
+
+    // Handle search submission
+    const handleSearchSubmit = (e) => {
+      e.preventDefault();
+      if (searchQuery.trim()) {
+        navigate(`${ROUTES.SHOP}?search=${encodeURIComponent(searchQuery)}`);
+        setSearchQuery(''); 
+      }
+    };
+
 
   return (
     <header className="header">
@@ -69,7 +86,7 @@ const Header = () => {
           </button>
         )}
 
-        <div className="search-bar">
+        <form className="search-bar" onSubmit={handleSearchSubmit}>
           <img
             src="/image/magnifying-glass-solid.svg"
             alt="Search"
@@ -79,8 +96,10 @@ const Header = () => {
             type="text"
             className="header-input"
             placeholder="Kibal Batal"
+            value={searchQuery}
+            onChange={handleSearchChange}
           />
-        </div>
+        </form>
 
         <div className="cart-icon" onClick={() => document.body.classList.add('is-basket-open')}>
           <img src="/image/cart-plus-solid.svg" alt="Cart" className="cart-icon-img" />
