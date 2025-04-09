@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import ProductCard from './components/home/ProductCard';
 import products from './constants/products';
 import './components/home/product-card.css';
@@ -16,7 +16,7 @@ const RecommendedPage = () => (
                 <h1>Recommended Products</h1>
             </div>
             <div className='section-4-picture'>
-                <img src={`${process.env.PUBLIC_URL}/image/recomended-page.png`} className='section-4-picture-content'>
+                <img src={`${process.env.PUBLIC_URL}/image/recomended-page.png`} className='section-4-picture-content' alt=''>
             </img>    
             </div>
         </div>
