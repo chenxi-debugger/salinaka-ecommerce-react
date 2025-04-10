@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/salinaka-ecommerce-react/static/css/main.0d6dc32a.css",
+    "main.js": "/salinaka-ecommerce-react/static/js/main.d00d77cf.js",
+    "index.html": "/salinaka-ecommerce-react/index.html",
+    "main.0d6dc32a.css.map": "/salinaka-ecommerce-react/static/css/main.0d6dc32a.css.map",
+    "main.d00d77cf.js.map": "/salinaka-ecommerce-react/static/js/main.d00d77cf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d6dc32a.css",
+    "static/js/main.d00d77cf.js"
+  ]
+}
